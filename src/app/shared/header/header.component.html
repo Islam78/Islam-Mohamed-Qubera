@@ -1,0 +1,22 @@
+<nav>
+    <section class="container">
+        <div class="logo">
+            <img src="../../../assets/images/Logomark.png" alt="" srcset="">
+            <span>ClickTik</span>
+            <p class="item">Home</p>
+        </div>
+        <div class="right">
+            <!-- if user dont logged -->
+            <a href="#" routerLink="" *ngIf="!IsLoged">Login</a>
+
+            <!-- if user loggin -->
+            <app-search *ngIf="IsLoged" (childToParent)="SetfillterProduct($event)"></app-search>
+            <a href="#" routerLink="orders" *ngIf="IsLoged">
+                <i class="fa-solid fa-cart-shopping shop"></i> <span class="notfication">4</span>
+            </a>
+            <a href="#" routerLink="" *ngIf="IsLoged" (click)="logOut()">Log out</a>
+            
+        </div>
+    </section>
+</nav>
+<hr>

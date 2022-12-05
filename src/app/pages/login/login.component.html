@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+
+<section class="login">
+    <div class="logo">
+        <img src="../../../assets/images/Logomark.png" alt="" srcset="">
+    </div>
+    <div class="conten">
+        <h1>Log in to your account</h1>
+        <p> {{ErrMsg}}</p>
+        <form [formGroup]="formData" (ngSubmit)="onSubmitButtonClicked(formData.value)">
+            <div class="form-group ">
+                <label for="InputEmail" class="CureentColor">Email </label>
+                <input type="email" class="form-control borderRaduse" id="InputEmail" formControlName="username"
+                    placeholder="Enter your email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+                <label for="InputPassword" class="CureentColor">Password</label>
+                <input type="password" class="form-control borderRaduse" id="InputPassword" required
+                    placeholder="••••••••" formControlName="password">
+            </div>
+            <button type="submit" class="loginbtn">Login</button>
+
+        </form>
+    </div>
+</section>
+<app-footer></app-footer>

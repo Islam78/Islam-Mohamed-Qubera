@@ -1,0 +1,52 @@
+<app-header (childToParent)="fillterProduct($event)"></app-header>
+
+<div class="parent">
+    <h1>{{fillterValue}}</h1>
+    <h5>Home / Products / <span>{{fillterValue}}</span></h5>
+    <div class="category">
+        <form id="category">
+            <p>Products</p>
+            <div class="form-group" *ngFor="let category of this.category">
+                <input type="radio" name="radAnswer" id="artisan" (click)="FillterWithCategory(category)">
+                <label for="artisan">{{category}}</label>
+            </div>
+        </form>
+    </div>
+    <ng-container *ngIf="ProductFound">
+        <div class="Items">
+            <h5>({{ProductFound}}) Products Found</h5>
+            <div class="PCards">
+                <ng-container *ngFor="let item of ProductsItem ">
+                    <div class="card">
+                        <img class="card-img-top" [src]="item.images[0]">
+                        <div class="cardcontent">
+                            <h4>{{item.title |slice : 0 : 35}}</h4>
+                            <p class="description">{{item.description |slice :0:50}}...</p>
+                            <p>
+                                <span class="discount">{{item.price}} USD </span>
+                                <span>{{item.price}} USD</span>
+                            </p>
+                            <p>brand: <span class="Bold"> {{item.brand}}</span></p>
+                            <p>Category: <span class="Bold"> {{item.category}}</span></p>
+                            <p>In stock: <span class="Bold"> {{item.stock}}</span></p>
+                            <p class="rating">
+                                <i class="fas fa-star fa-2"></i>
+                                <span class="Bold"> {{item.rating}}</span>
+                                <span class="Bold"> ({{item.id}})</span>
+                            </p>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+        </div>
+        <div class="pagination">
+            <app-pagination [current]="current" [total]="total" (goTo)="onGoTo($event)" (next)="onNext($event)"
+                (previous)="onPrevious($event)"></app-pagination>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="!ProductFound">
+        No Result
+    </ng-container>
+</div>

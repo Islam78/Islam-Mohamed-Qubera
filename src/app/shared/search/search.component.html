@@ -1,0 +1,5 @@
+<div class="search">
+    <i class="fa-solid fa-search searchICon"></i>
+    <input type="text" id="search" [(ngModel)]="SearchValue" (ngModelChange)="sendToParent()" placeholder="Search">
+    <i class="fa-solid fa-xmark clear" *ngIf="SearchValue" (click)="ClearSearch()"></i>
+</div>

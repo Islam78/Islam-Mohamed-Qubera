@@ -1,0 +1,126 @@
+.parent {
+    margin: 50px;
+
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1E1E1E;
+}
+
+h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #344054;
+}
+
+
+
+h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #1E1E1E;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+.parent h5 span {
+    font-weight: bold;
+}
+
+.parent .category {
+    background: #FFFFFF;
+    width: 20%;
+    display: inline;
+    float: left;
+    margin-right: 20px;
+}
+
+.parent .category form {
+    border: 0.5px solid #D0D5DD;
+    border-radius: 8px;
+    padding: 0 10px 10px 10px;
+}
+
+.parent .Items {
+    width: 70%;
+    display: inline-block;
+}
+
+.parent .Items .PCards {
+    display: block;
+}
+
+.parent .Items .card {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    float: left;
+    width: 30%;
+    border: 0.5px solid #D0D5DD;
+    border-radius: 8px;
+
+}
+
+.parent .Items .card img {
+    width: 336px;
+    height: 258px;
+}
+
+.parent .Items .card .cardcontent {
+    padding: 0 10px 10px 10px;
+}
+
+.parent .Items .card .cardcontent .discount {
+    text-decoration: line-through;
+    margin-right: 30px;
+    color: #344054;
+}
+
+.parent .Items .PCards .description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -3px;
+    color: #344054;
+
+}
+
+.parent .Items .PCards .rating {
+    color: #F4B30C;
+    float: right;
+}
+
+.Items .card .cardcontent button {
+    Width: 250px;
+    Height: 50px;
+    background: #56D9D9;
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #344054;
+    border: none;
+    margin-left: 12px;
+
+}

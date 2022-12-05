@@ -1,0 +1,72 @@
+nav {
+    background: #FFFFFF;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+nav .container {
+    display: flex;
+    padding: 0px 32px;
+}
+
+nav .logo span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    margin-left: 8px;
+}
+
+nav .item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+}
+
+.right {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    position: absolute;
+    right: 100px;
+    top: 15px;
+}
+
+.right a {
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    text-decoration: none;
+}
+.right .shop{
+    color: #667085;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.right .notfication{
+    position: absolute;
+    top: -14px;
+    right: 60px;
+    background: #56D9D9;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 0px 5px;
+}
